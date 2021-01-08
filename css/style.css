@@ -1,23 +1,15 @@
-<!DOCTYPE HTML>
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<meta name="author" content="Shauna Deines">
-<meta name="description" content="Shauna Deines Portfolio UX/UI Designer">
-<title>Adding CSS</title>
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-</head>
+/*Colors Used:
+Primary Color (Purple): #6E3667
+Secondary Color (White): #FFFFFF
+Secondary Color (Lime Green): #88D317
+Tertiary Color (Dark Purple): #1A0315
+Tertiary Color (Gray): #535353
+*/
 
-<style>
+    body {
+      font-family: 'Raleway', sans-serif;
+    }
     code {
       color: red;
       background-color: lightgreen;
     }
-</style>
-
-<body style="background-color: lightblue;">
-  <h1>Hello from the <code>style</code> tag</h1>
-  <p>My color is coming from the <code>style.css</code> file</p>
-</body>
-</html>
