@@ -19,6 +19,7 @@ body {
   line-height: 1.6;
   /* Sets the line-height to 1.6 * the font-size */
   color: #FFFFFF;
+  padding-top: 100px
 }
 
 a {
@@ -27,20 +28,76 @@ a {
   /* No underlining */
 }
 
+/* SVG image animation*/
+@keyframes color-change {
+  0% {
+    fill: #edc655;
+  }
+
+  50% {
+    fill: #fcffad;
+  }
+
+  100% {
+    fill: #f76414;
+  }
+}
+
+.sun {
+  animation: 4s color-change infinite alternate linear;
+}
+
+@keyframes cloud-move {
+  from {
+    transform: translate(0, 50px);
+  }
+
+  to {
+    transform: translate(200px, 50px);
+  }
+}
+
+.cloud-front {
+  animation: 30s cloud-move infinite alternate linear;
+}
+
+@keyframes cloud-move-reverse {
+  from {
+    transform: translate(446px, 48px);
+  }
+
+  to {
+    transform: translate(100px, 48px);
+  }
+}
+#montivagant-picture {
+  display: flex;
+  justify-content: flex-start;
+  align-self: flex-end;
+}
+#montivagant-text {
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
+}
+
+/* button states*/
 a:visited {
   color: #FFFFFF;
   /* visited link */
 }
 
 a:hover {
-  color: #1A0315;
+  color: #FFFFFF;
   text-decoration: underline;
   /* Underlining when hovering over a link */
 }
 
 a:hover,
 a:focus {
-  color: #1A0315;
+  color: #FFFFFF;
   text-decoration: underline;
 }
 
@@ -85,57 +142,48 @@ img {
   width: 100%;
 }
 
+/*about page photo*/
 .centeredImg {
   width: 200px;
-  padding-top: 100px;
+  padding: 10px 0 0 0;
   display: block;
-  margin: auto;
-}
-
-.button.contact {
-  background-color: #88D317;
-  color: #FFFFFF;
-  text-transform: uppercase;
-  border: 2px solid #88D317;
-  border: 15px;
-}
-
-.button.contact:hover {
-  background-color: #88D317;
-  color: #1A0315;
-  text-decoration: underline;
+  margin: 0 auto;
 }
 
 .button.myresume {
   background-color: #88D317;
   color: #FFFFFF;
+  margin-top: 20px;
   text-transform: uppercase;
   border: 2px solid #88D317;
 }
 
 .button.myresume:hover {
   background-color: #88D317;
-  color: #1A0315;
+  color: #FFFFFF;
+  margin-top: 20px;
   text-decoration: underline;
 }
 
 .button {
   display: inline-block;
-  /* since the <a> tag is inline by default, we need to change this to inline-block */
   background-color: #88D317;
-  color: #FFFFFF;
-  /* needed to override the default link color */
-  font-weight: 600;
+  color: white;
+  font-weight: 400;
+  text-decoration: none;
   padding: 10px;
   border-radius: 3px;
   border-bottom: 2px solid #88D317;
-  /* width of the border, type, color */
-  transition: 0.2s opacity .8;
+  transition: 0.2s opacity;
+}
+
+.button:hover {
+  opacity: 0.8;
 }
 
 /* Layout styling for index */
 .container {
-  padding: 20px 15px 0 15px;
+  padding: 0 15px;
 }
 
 .sociallinks {
@@ -143,27 +191,36 @@ img {
   text-align: center;
 }
 
-.row {
+#home .row {
+  padding-top: 50px;
+  border-bottom: 1px solid #6E3667;
   margin: 25px 0;
-  /* 25px top and bottom, 0 left and right */
+  width: 100%;
 }
 
 #work .row {
   padding-bottom: 25px;
   border-bottom: 1px solid #6E3667;
-  padding-top: 133px;
+  margin: 25px 0;
+  width: 100%;
 }
 
 #about .row {
   padding-bottom: 25px;
   border-bottom: 1px solid #6E3667;
+  margin: 0px;
+  width: 100%;
 }
 
-#hero {
+#hero .row {
   background-color: #6E3667;
-  padding: 0px 25px;
-  padding-top: 204px;
+  display: inline-block;
   width: 100%;
+  text-align: center;
+
+  span {
+    display: block;
+  }
 }
 
 .center {
@@ -171,25 +228,25 @@ img {
 }
 
 .logo {
-  max-width: 100px;
-  height: 100px;
+  max-width: 75px;
+  height: 75px;
+  float: left;
 }
 
 header {
   display: inline-block;
   background-color: #6E3667;
   text-align: center;
-  padding: 10px 0;
   width: 100%;
   -webkit-box-shadow: 0px 7px 22px -2px rgba(50, 50, 50, 0.96);
   -moz-box-shadow: 0px 7px 22px -2px rgba(50, 50, 50, 0.96);
   box-shadow: 0px 7px 22px -2px rgba(50, 50, 50, 0.96);
   position: fixed;
-  }
+  top: 0px;
+}
 
 nav>ul {
   list-style-type: none;
-  padding: 0;
 }
 
 nav>ul>li {
@@ -197,15 +254,167 @@ nav>ul>li {
 }
 
 nav>ul>li>a {
-  padding: 0 15px;
+  padding: 0 10px;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 300;
   color: #FFFFFF;
 }
 
 nav>ul>li>a:active {
-  padding: 0 15px;
+  padding: 0 10px;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 300;
   color: #88D317;
+}
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+  header {
+    text-align: unset;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 10px;
+    border: 10px;
+  }
+
+  #about h3 {
+    margin-top: 0;
+  }
+
+  .col-md-6 {
+    width: 50%;
+  }
+
+  .col-md-7 {
+    width: 70%;
+  }
+
+  .col-md-5 {
+    width: 30%;
+  }
+
+  [class*="col-"] {
+    float: left;
+    padding: 10px;
+    width: 100%;
+  }
+
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+}
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+  header {
+    text-align: unset;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 10px;
+    border: 10px;
+  }
+
+  #about h3 {
+    margin-top: 0;
+  }
+
+  .col-md-6 {
+    width: 50%;
+  }
+
+  .col-md-7 {
+    width: 70%;
+  }
+
+  .col-md-5 {
+    width: 30%;
+  }
+
+  [class*="col-"] {
+    float: left;
+    padding: 10px;
+  }
+
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {
+  header {
+    text-align: unset;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 0px;
+    border: 10px;
+  }
+
+  #about h3 {
+    margin-top: 0;
+  }
+
+  .col-md-6 {
+    width: 50%;
+  }
+
+  .col-md-7 {
+    width: 70%;
+  }
+
+  .col-md-5 {
+    width: 30%;
+  }
+
+  [class*="col-"] {
+    float: left;
+    padding: 10px;
+  }
+
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
