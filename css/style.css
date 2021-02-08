@@ -1,16 +1,15 @@
 /*Colors Used:
-Primary Color (Purple): #6E3667
-Secondary Color (White): #FFFFFF
-Secondary Color (Lime Green): #88D317
-Tertiary Color (Dark Purple): #1A0315
-Tertiary Color (Gray): #535353
+Primary Color (cream): #F5F0ED
+Secondary Color (pink): #D6B7B5
+Secondary Color (dark teal): #3D5361
+Tertiary Color (tan): #D4C6BD
 */
 * {
   box-sizing: border-box;
 }
 
 body {
-  background-color: #6E3667;
+  background-color: #3D5361;
   font-family: 'Raleway', sans-serif;
   font-size: 16px;
   /* Sets the font size to 16px */
@@ -18,14 +17,15 @@ body {
   /* Sets the font weight to 300 */
   line-height: 1.6;
   /* Sets the line-height to 1.6 * the font-size */
-  color: #FFFFFF;
+  color: #F5F0ED;
+  /*body text color*/
   padding-top: 100px
 }
 
 a {
-  color: #FFFFFF;
+  color: #D4C6BD;
+  /* Phone number - No underlining */
   text-decoration: none;
-  /* No underlining */
 }
 
 /* SVG image animation*/
@@ -70,40 +70,43 @@ a {
     transform: translate(100px, 48px);
   }
 }
+
 #montivagant-picture {
   display: flex;
   justify-content: flex-start;
   align-self: flex-end;
 }
+
 #montivagant-text {
   justify-content: flex-start;
   align-items: flex-start;
 }
+
 .cloud-back {
   animation: 34s cloud-move-reverse infinite alternate linear;
 }
 
 /* button states*/
 a:visited {
-  color: #FFFFFF;
-  /* visited link */
+  color: #F5F0ED;
+  /* navigation and inside button text color */
 }
 
 a:hover {
-  color: #FFFFFF;
+  color: #D6B7B5;
   text-decoration: underline;
   /* Underlining when hovering over a link */
 }
 
 a:hover,
 a:focus {
-  color: #FFFFFF;
+  color: #D6B7B5;
   text-decoration: underline;
 }
 
 a:active {
   /* selected link */
-  color: #88D317;
+  color: #D6B7B5;
 }
 
 h1, h2, h3, h4 {
@@ -113,28 +116,32 @@ h1, h2, h3, h4 {
 h1 {
   font-size: 2.50em;
   font-weight: 700;
-  color: #88D317;
+  color: #F5F0ED;
+  /* Hi,my name is... and About text color */
   font-variant: small-caps;
 }
 
 h2 {
   font-size: 2.25em;
   font-weight: 700;
-  color: #88D317;
+  color: #F5F0ED;
+  /* Subtitle2 (My Work, Get in touch, etc) text color */
   font-variant: small-caps;
 }
 
 h3 {
   font-size: 1.75em;
   font-weight: 600;
-  color: #88D317;
+  color: #F5F0ED;
+  /* Subtitle3 (Montivagant/Bucket List, skills, tools, etc) text color */
   font-variant: small-caps;
 }
 
 h4 {
   font-size: 1.35em;
   font-weight: 600;
-  color: #88D317;
+  color: #F5F0ED;
+  /* ? text color */
   font-variant: small-caps;
 }
 
@@ -151,33 +158,76 @@ img {
 }
 
 .button.myresume {
-  background-color: #88D317;
-  color: #FFFFFF;
+  background-color: #F6F6F6;
+  /* background color of resume button*/
+  color: #408697;
+  /* text color of resume button*/
   margin-top: 20px;
+  font-weight: 300;
   text-transform: uppercase;
-  border: 2px solid #88D317;
+  border: 2px solid #F6F6F6;
+  /* border color of resume button*/
 }
 
 .button.myresume:hover {
-  background-color: #88D317;
-  color: #FFFFFF;
+  background-color: #F6F6F6;
+  /* background color of resume button*/
+  color: #D6B7B5;
+  /* text color of resume button*/
   margin-top: 20px;
+  font-weight: 300;
   text-decoration: underline;
+}
+
+.button.bucketlist {
+  color: #408697;
+  /* text color of bucketlist button*/
+  margin-top: 20px;
+  font-weight: 300;
+  text-transform: uppercase;
+  /* border color of resume button*/
+}
+
+.button.bucketlist:hover {
+  color: #D6B7B5;
+  /* text color of bucketlist button*/
+  margin-top: 20px;
+  font-weight: 300;
+}
+
+.button.montivagant {
+  color: #408697;
+  /* text color of montivagant button*/
+  margin-top: 20px;
+  font-weight: 300;
+  text-transform: uppercase;
+  /* border color of resume button*/
+}
+
+.button.montivagant:hover {
+  color: #D6B7B5;
+  /* text color of montivagant button*/
+  margin-top: 20px;
+  font-weight: 300;
 }
 
 .button {
   display: inline-block;
-  background-color: #88D317;
-  color: white;
-  font-weight: 400;
-  text-decoration: none;
+  background-color: #F6F6F6;
+  /* background color of other buttons*/
+  color: #408697;
+  /* text color of other buttons (except montivagant and bucket list)*/
+  font-weight: 300;
+  text-transform: uppercase;
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 2px solid #88D317;
+  border-bottom: 2px solid #F6F6F6;
+  /* border color of other buttons*/
   transition: 0.2s opacity;
 }
 
 .button:hover {
+  color: #D6B7B5;
   opacity: 0.8;
 }
 
@@ -193,27 +243,27 @@ img {
 
 #home .row {
   padding-top: 50px;
-  border-bottom: 1px solid #6E3667;
+  border-bottom: 1px solid #3D5361;
   margin: 25px 0;
   width: 100%;
 }
 
 #work .row {
   padding-bottom: 25px;
-  border-bottom: 1px solid #6E3667;
+  border-bottom: 1px solid #3D5361;
   margin: 25px 0;
   width: 100%;
 }
 
 #about .row {
   padding-bottom: 25px;
-  border-bottom: 1px solid #6E3667;
+  border-bottom: 1px solid #3D5361;
   margin: 0px;
   width: 100%;
 }
 
 #hero .row {
-  background-color: #6E3667;
+  background-color: #3D5361;
   display: inline-block;
   width: 100%;
   text-align: center;
@@ -235,12 +285,12 @@ img {
 
 header {
   display: inline-block;
-  background-color: #6E3667;
+  background-color: #3D5361;
   text-align: center;
   width: 100%;
-  -webkit-box-shadow: 0px 7px 22px -2px rgba(50, 50, 50, 0.96);
-  -moz-box-shadow: 0px 7px 22px -2px rgba(50, 50, 50, 0.96);
-  box-shadow: 0px 7px 22px -2px rgba(50, 50, 50, 0.96);
+  -webkit-box-shadow: 0px 3px 5px 0px rgba(236, 236, 236, 0.75);
+  -moz-box-shadow: 0px 3px 5px 0px rgba(236, 236, 236, 0.75);
+  box-shadow: 0px 3px 5px 0px rgba(236, 236, 236, 0.75);
   position: fixed;
   top: 0px;
 }
@@ -254,17 +304,17 @@ nav>ul>li {
 }
 
 nav>ul>li>a {
-  padding: 0 10px;
+  padding: 15px 10px 0 10px;
   text-transform: uppercase;
   font-weight: 300;
-  color: #FFFFFF;
+  color: #F5F0ED;
 }
 
 nav>ul>li>a:active {
-  padding: 0 10px;
+  padding: 15px 10px 0 10px;
   text-transform: uppercase;
   font-weight: 300;
-  color: #88D317;
+  color: #F5F0ED;
 }
 
 /* ==============================
@@ -286,18 +336,6 @@ Medium devices (640px and larger)
     margin-top: 0;
   }
 
-  .col-md-6 {
-    width: 50%;
-  }
-
-  .col-md-7 {
-    width: 70%;
-  }
-
-  .col-md-5 {
-    width: 30%;
-  }
-
   [class*="col-"] {
     float: left;
     padding: 10px;
@@ -314,6 +352,22 @@ Medium devices (640px and larger)
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .col-md-6 {
+    width: 50%;
+  }
+
+  .col-md-7 {
+    width: 70%;
+  }
+
+  .col-md-5 {
+    width: 30%;
+  }
+
+  .col-md-12 {
+    width: 100%;
   }
 
   * {
@@ -340,33 +394,20 @@ Large devices (1024px or larger)
     margin-top: 0;
   }
 
-  .col-md-6 {
+  .col-lg-6 {
     width: 50%;
   }
 
-  .col-md-7 {
+  .col-lg-7 {
     width: 70%;
   }
 
-  .col-md-5 {
+  .col-lg-5 {
     width: 30%;
   }
 
-  [class*="col-"] {
-    float: left;
-    padding: 10px;
-  }
-
-  .row::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-
-  .container {
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
+  .col-lg-12 {
+    width: 100%;
   }
 }
 
@@ -387,34 +428,5 @@ X-large devices (1440px or larger)
 
   #about h3 {
     margin-top: 0;
-  }
-
-  .col-md-6 {
-    width: 50%;
-  }
-
-  .col-md-7 {
-    width: 70%;
-  }
-
-  .col-md-5 {
-    width: 30%;
-  }
-
-  [class*="col-"] {
-    float: left;
-    padding: 10px;
-  }
-
-  .row::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-
-  .container {
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
