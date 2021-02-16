@@ -1,15 +1,15 @@
 /*Colors Used:
-Primary Color (cream): #F5F0ED
-Secondary Color (pink): #D6B7B5
-Secondary Color (dark teal): #3D5361
-Tertiary Color (tan): #D4C6BD
+Primary Color (sand): #AF9F8C
+Secondary Color (olive): #979879
+Secondary Color (gray-blue): #778899
+Tertiary Color (white): #FFFFFF
 */
 * {
   box-sizing: border-box;
 }
 
 body {
-  background-color: #3D5361;
+  background-color: #FFFFFF;
   font-family: 'Raleway', sans-serif;
   font-size: 16px;
   /* Sets the font size to 16px */
@@ -17,13 +17,13 @@ body {
   /* Sets the font weight to 300 */
   line-height: 1.6;
   /* Sets the line-height to 1.6 * the font-size */
-  color: #F5F0ED;
+  color: #979879;
   /*body text color*/
   padding-top: 100px
 }
 
 a {
-  color: #D4C6BD;
+  color: #778899;
   /* Phone number - No underlining */
   text-decoration: none;
 }
@@ -93,20 +93,20 @@ a:visited {
 }
 
 a:hover {
-  color: #D6B7B5;
+  color: #7F867B;
   text-decoration: underline;
   /* Underlining when hovering over a link */
 }
 
 a:hover,
 a:focus {
-  color: #D6B7B5;
+  color: #7F867B;
   text-decoration: underline;
 }
 
 a:active {
   /* selected link */
-  color: #D6B7B5;
+  color: #7F867B;
 }
 
 h1, h2, h3, h4 {
@@ -114,17 +114,17 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-  font-size: 2.50em;
+  font-size: 2.25em;
   font-weight: 700;
-  color: #F5F0ED;
+  color: #778899;
   /* Hi,my name is... and About text color */
   font-variant: small-caps;
 }
 
 h2 {
-  font-size: 2.25em;
+  font-size: 2.00em;
   font-weight: 700;
-  color: #F5F0ED;
+  color: #778899;
   /* Subtitle2 (My Work, Get in touch, etc) text color */
   font-variant: small-caps;
 }
@@ -132,7 +132,7 @@ h2 {
 h3 {
   font-size: 1.75em;
   font-weight: 600;
-  color: #F5F0ED;
+  color: #778899;
   /* Subtitle3 (Montivagant/Bucket List, skills, tools, etc) text color */
   font-variant: small-caps;
 }
@@ -140,7 +140,7 @@ h3 {
 h4 {
   font-size: 1.35em;
   font-weight: 600;
-  color: #F5F0ED;
+  color: #778899;
   /* ? text color */
   font-variant: small-caps;
 }
@@ -158,21 +158,21 @@ img {
 }
 
 .button.myresume {
-  background-color: #F6F6F6;
+  background-color: #979879;
   /* background color of resume button*/
-  color: #408697;
+  color: #FFFFFF;
   /* text color of resume button*/
   margin-top: 20px;
   font-weight: 300;
   text-transform: uppercase;
-  border: 2px solid #F6F6F6;
+  border: 2px solid #FFFFFF;
   /* border color of resume button*/
 }
 
 .button.myresume:hover {
-  background-color: #F6F6F6;
+  background-color: #979879;
   /* background color of resume button*/
-  color: #D6B7B5;
+  color: #FFFFFF;
   /* text color of resume button*/
   margin-top: 20px;
   font-weight: 300;
@@ -180,32 +180,30 @@ img {
 }
 
 .button.bucketlist {
-  color: #408697;
+  color: #FFFFFF;
   /* text color of bucketlist button*/
   margin-top: 20px;
   font-weight: 300;
   text-transform: uppercase;
-  /* border color of resume button*/
 }
 
 .button.bucketlist:hover {
-  color: #D6B7B5;
+  color: #FFFFFF;
   /* text color of bucketlist button*/
   margin-top: 20px;
   font-weight: 300;
 }
 
 .button.montivagant {
-  color: #408697;
+  color: #FFFFFF;
   /* text color of montivagant button*/
   margin-top: 20px;
   font-weight: 300;
   text-transform: uppercase;
-  /* border color of resume button*/
 }
 
 .button.montivagant:hover {
-  color: #D6B7B5;
+  color: #FFFFFF;
   /* text color of montivagant button*/
   margin-top: 20px;
   font-weight: 300;
@@ -213,21 +211,21 @@ img {
 
 .button {
   display: inline-block;
-  background-color: #F6F6F6;
+  background-color: #979879;
   /* background color of other buttons*/
-  color: #408697;
+  color: #FFFFFF;
   /* text color of other buttons (except montivagant and bucket list)*/
   font-weight: 300;
   text-transform: uppercase;
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 2px solid #F6F6F6;
+  border-bottom: 2px solid #FFFFFF;
   /* border color of other buttons*/
   transition: 0.2s opacity;
 }
 
 .button:hover {
-  color: #D6B7B5;
+  color: #FFFFFF;
   opacity: 0.8;
 }
 
@@ -237,33 +235,34 @@ img {
 }
 
 .sociallinks {
-  padding: 20px 15px 0 15px;
+  padding: 25px;
+  font-weight: 700;
   text-align: center;
 }
 
 #home .row {
   padding-top: 50px;
-  border-bottom: 1px solid #3D5361;
+  border-bottom: 1px solid #FFFFFF;
   margin: 25px 0;
   width: 100%;
 }
 
 #work .row {
   padding-bottom: 25px;
-  border-bottom: 1px solid #3D5361;
+  border-bottom: 1px solid #FFFFFF;
   margin: 25px 0;
   width: 100%;
 }
 
 #about .row {
   padding-bottom: 25px;
-  border-bottom: 1px solid #3D5361;
+  border-bottom: 1px solid #FFFFFF;
   margin: 0px;
   width: 100%;
 }
 
 #hero .row {
-  background-color: #3D5361;
+  background-color: #FFFFFF;
   display: inline-block;
   width: 100%;
   text-align: center;
@@ -285,25 +284,53 @@ img {
 
 header {
   display: inline-block;
-  background-color: #3D5361;
-  text-align: center;
+  background-color: #778899;
   width: 100%;
   -webkit-box-shadow: 0px 3px 5px 0px rgba(236, 236, 236, 0.75);
   -moz-box-shadow: 0px 3px 5px 0px rgba(236, 236, 236, 0.75);
   box-shadow: 0px 3px 5px 0px rgba(236, 236, 236, 0.75);
   position: fixed;
   top: 0px;
+  padding: 10px 0 4px;
 }
 
-nav>ul {
-  list-style-type: none;
+.navtoggle li:not(:last-child) {
+  display: none;
 }
 
-nav>ul>li {
-  display: inline-block;
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+  padding-right: 0;
+}
+
+.navtoggle li {
+  display: block;
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+
+.navtoggle.responsive li {
+  display: block;
+  padding: 10px 0;
+  //border-top: 1px solid rgba(255,127,80,0.5);
+  text-align: right;
+}
+
+.navtoggle.responsive li:last-child {
+  padding: 0 0 10px;
 }
 
 nav>ul>li>a {
+  /*hamburger menu*/
   padding: 15px 10px 0 10px;
   text-transform: uppercase;
   font-weight: 300;
@@ -330,6 +357,24 @@ Medium devices (640px and larger)
     float: right;
     margin-top: 10px;
     border: 10px;
+  }
+
+  nav>ul>li {
+    display: inline-block;
+  }
+
+  nav>ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 1em 0;
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
   }
 
   #about h3 {
