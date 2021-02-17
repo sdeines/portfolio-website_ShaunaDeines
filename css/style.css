@@ -1,6 +1,6 @@
 /*Colors Used:
 Primary Color (sand): #AF9F8C
-Secondary Color (olive): #979879
+Secondary Color (olive): #979879 626940
 Secondary Color (gray-blue): #778899
 Tertiary Color (white): #FFFFFF
 */
@@ -17,7 +17,7 @@ body {
   /* Sets the font weight to 300 */
   line-height: 1.6;
   /* Sets the line-height to 1.6 * the font-size */
-  color: #979879;
+  color: #626940;
   /*body text color*/
   padding-top: 100px
 }
@@ -89,6 +89,7 @@ a {
 /* button states*/
 a:visited {
   color: #FFFFFF;
+  text-decoration: underline;
   /* navigation and inside button text color */
 }
 
@@ -98,15 +99,16 @@ a:hover {
   /* Underlining when hovering over a link */
 }
 
-a:hover,
-a:focus {
+a:active {
+  /* selected link */
   color: #FFFFFF;
   text-decoration: underline;
 }
 
-a:active {
-  /* selected link */
+a:hover,
+a:focus {
   color: #FFFFFF;
+  text-decoration: underline;
 }
 
 h1, h2, h3, h4 {
@@ -158,7 +160,7 @@ img {
 }
 
 .button.myresume {
-  background-color: #979879;
+  background-color: #626940;
   /* background color of resume button*/
   color: #FFFFFF;
   /* text color of resume button*/
@@ -170,7 +172,7 @@ img {
 }
 
 .button.myresume:hover {
-  background-color: #979879;
+  background-color: #626940;
   /* background color of resume button*/
   color: #FFFFFF;
   /* text color of resume button*/
@@ -211,7 +213,7 @@ img {
 
 .button {
   display: inline-block;
-  background-color: #979879;
+  background-color: #626940;
   /* background color of other buttons*/
   color: #FFFFFF;
   /* text color of other buttons (except montivagant and bucket list)*/
@@ -320,10 +322,9 @@ header {
   display: block;
 }
 
-
 .navtoggle.responsive li {
   display: block;
-  padding: 0 10px;
+  padding: 0 0px;
   //border-top: 0;
   color: #FFFFFF;
   text-align: right;
@@ -346,6 +347,7 @@ nav>ul>li>a:active {
   text-transform: uppercase;
   font-weight: 300;
   color: #FFFFFF;
+  text-decoration: underline;
 }
 
 ul.navigation {
