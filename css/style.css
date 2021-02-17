@@ -352,7 +352,8 @@ nav>ul>li>a:active {
 
 ul.navigation {
   margin: 0;
-  padding: 15px;
+  padding: 0px;
+  clear:both;
 }
 
 /* ==============================
