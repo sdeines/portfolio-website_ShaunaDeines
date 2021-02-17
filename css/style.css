@@ -88,25 +88,25 @@ a {
 
 /* button states*/
 a:visited {
-  color: #F5F0ED;
+  color: #FFFFFF;
   /* navigation and inside button text color */
 }
 
 a:hover {
-  color: #7F867B;
+  color: #FFFFFF;
   text-decoration: underline;
   /* Underlining when hovering over a link */
 }
 
 a:hover,
 a:focus {
-  color: #7F867B;
+  color: #FFFFFF;
   text-decoration: underline;
 }
 
 a:active {
   /* selected link */
-  color: #7F867B;
+  color: #FFFFFF;
 }
 
 h1, h2, h3, h4 {
@@ -240,6 +240,10 @@ img {
   text-align: center;
 }
 
+.sociallinks a {
+  font-size: 30px;
+}
+
 #home .row {
   padding-top: 50px;
   border-bottom: 1px solid #FFFFFF;
@@ -291,7 +295,8 @@ header {
   box-shadow: 0px 3px 5px 0px rgba(236, 236, 236, 0.75);
   position: fixed;
   top: 0px;
-  padding: 10px 0 4px;
+  padding: 0px 4px;
+  margin: 0px;
 }
 
 .navtoggle li:not(:last-child) {
@@ -308,20 +313,19 @@ header {
   top: 2px;
   font-size: 20px;
   padding-right: 0;
+  color: #FFFFFF;
 }
 
 .navtoggle li {
   display: block;
 }
 
-.navtoggle.responsive nav {
-  padding: 24px 0 0;
-}
 
 .navtoggle.responsive li {
   display: block;
-  padding: 10px 0;
-  //border-top: 1px solid rgba(255,127,80,0.5);
+  padding: 0 10px;
+  //border-top: 0;
+  color: #FFFFFF;
   text-align: right;
 }
 
@@ -334,14 +338,19 @@ nav>ul>li>a {
   padding: 15px 10px 0 10px;
   text-transform: uppercase;
   font-weight: 300;
-  color: #F5F0ED;
+  color: #FFFFFF;
 }
 
 nav>ul>li>a:active {
   padding: 15px 10px 0 10px;
   text-transform: uppercase;
   font-weight: 300;
-  color: #F5F0ED;
+  color: #FFFFFF;
+}
+
+ul.navigation {
+  margin: 0;
+  padding: 15px;
 }
 
 /* ==============================
