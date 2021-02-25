@@ -1,34 +1,28 @@
-/*Colors Used:
+/* Colors Used:
 Primary Color (sand): #AF9F8C
-Secondary Color (olive): #979879 626940
+Secondary Color (light olive/ dark olive): #979879 626940
 Secondary Color (gray-blue): #778899
-Tertiary Color (white): #FFFFFF
+Tertiary Color (white): #ffffff
 */
 * {
   box-sizing: border-box;
 }
 
 body {
-  background-color: #FFFFFF;
+  background-color: #fff;
   font-family: 'Raleway', sans-serif;
   font-size: 16px;
-  /* Sets the font size to 16px */
   font-weight: 500;
-  /* Sets the font weight to 300 */
   line-height: 1.6;
-  /* Sets the line-height to 1.6 * the font-size */
   color: #626940;
-  /*body text color*/
-  padding-top: 100px
+  padding-top: 100px;
 }
 
 a {
-  color: #778899;
-  /* Phone number - No underlining */
+  color: #789;
   text-decoration: none;
 }
 
-/* SVG image animation*/
 @keyframes color-change {
   0% {
     fill: #edc655;
@@ -39,7 +33,7 @@ a {
   }
 
   100% {
-    fill: #f76414;
+    fill: #d47c27;
   }
 }
 
@@ -49,26 +43,35 @@ a {
 
 @keyframes cloud-move {
   from {
-    transform: translate(0, 50px);
+    transform: translate(500px, -200px);
   }
 
   to {
-    transform: translate(200px, 50px);
+    transform: translate(-800px, -200px);
   }
 }
 
-.cloud-front {
-  animation: 30s cloud-move infinite alternate linear;
+.cloud-top {
+  animation: 20s cloud-move infinite alternate linear;
+}
+
+.cloud-bottom {
+  animation: 30s cloud-move-reverse infinite alternate linear;
 }
 
 @keyframes cloud-move-reverse {
   from {
-    transform: translate(446px, 48px);
+    transform: translate(-200px, 150px);
   }
 
   to {
-    transform: translate(100px, 48px);
+    transform: translate(1000px, 150px);
   }
+}
+
+#Layer_1 {
+  height: auto;
+  width: auto;
 }
 
 #montivagant-picture {
@@ -82,68 +85,66 @@ a {
   align-items: flex-start;
 }
 
-.cloud-back {
-  animation: 34s cloud-move-reverse infinite alternate linear;
+#colorado-picture {
+  display: flex;
+  justify-content: flex-start;
+  align-self: flex-end;
 }
 
-/* button states*/
+#colorado-text {
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
 a:visited {
-  color: #FFFFFF;
+  color: #fff;
   text-decoration: underline;
-  /* navigation and inside button text color */
 }
 
 a:hover {
-  color: #FFFFFF;
+  color: #fff;
   text-decoration: underline;
-  /* Underlining when hovering over a link */
 }
 
 a:active {
-  /* selected link */
-  color: #FFFFFF;
+  color: #fff;
   text-decoration: underline;
 }
 
 a:hover,
 a:focus {
-  color: #FFFFFF;
-  text-decoration: underline;
-}
-
-h1, h2, h3, h4 {
-  line-height: 1.4;
+  color: #AF9F8C;
 }
 
 h1 {
   font-size: 2.25em;
   font-weight: 700;
-  color: #778899;
-  /* Hi,my name is... and About text color */
+  line-height: 1.4;
+  color: #789;
   font-variant: small-caps;
 }
 
 h2 {
-  font-size: 2.00em;
+  font-size: 2em;
   font-weight: 700;
-  color: #778899;
-  /* Subtitle2 (My Work, Get in touch, etc) text color */
+  line-height: 1.4;
+  color: #789;
   font-variant: small-caps;
 }
 
 h3 {
   font-size: 1.75em;
   font-weight: 600;
-  color: #778899;
-  /* Subtitle3 (Montivagant/Bucket List, skills, tools, etc) text color */
+  line-height: 1.4;
+  color: #789;
   font-variant: small-caps;
 }
 
 h4 {
   font-size: 1.35em;
   font-weight: 600;
-  color: #778899;
-  /* ? text color */
+  line-height: 1.4;
+  color: #789;
   font-variant: small-caps;
 }
 
@@ -151,62 +152,52 @@ img {
   width: 100%;
 }
 
-/*about page photo*/
 .centeredImg {
   width: 200px;
-  padding: 10px 0 0 0;
+  padding: 10px 0 0;
   display: block;
   margin: 0 auto;
 }
 
 .button.myresume {
   background-color: #626940;
-  /* background color of resume button*/
-  color: #FFFFFF;
-  /* text color of resume button*/
+  color: #fff;
   margin-top: 20px;
   font-weight: 300;
   text-transform: uppercase;
-  border: 2px solid #FFFFFF;
-  /* border color of resume button*/
+  border: 2px solid #fff;
 }
 
 .button.myresume:hover {
-  background-color: #626940;
-  /* background color of resume button*/
-  color: #FFFFFF;
-  /* text color of resume button*/
+  background-color: #979879;
+  color: #fff;
   margin-top: 20px;
   font-weight: 300;
   text-decoration: underline;
 }
 
 .button.bucketlist {
-  color: #FFFFFF;
-  /* text color of bucketlist button*/
+  color: #fff;
   margin-top: 20px;
   font-weight: 300;
   text-transform: uppercase;
 }
 
 .button.bucketlist:hover {
-  color: #FFFFFF;
-  /* text color of bucketlist button*/
+  color: #fff;
   margin-top: 20px;
   font-weight: 300;
 }
 
 .button.montivagant {
-  color: #FFFFFF;
-  /* text color of montivagant button*/
+  color: #fff;
   margin-top: 20px;
   font-weight: 300;
   text-transform: uppercase;
 }
 
 .button.montivagant:hover {
-  color: #FFFFFF;
-  /* text color of montivagant button*/
+  color: #fff;
   margin-top: 20px;
   font-weight: 300;
 }
@@ -214,24 +205,20 @@ img {
 .button {
   display: inline-block;
   background-color: #626940;
-  /* background color of other buttons*/
-  color: #FFFFFF;
-  /* text color of other buttons (except montivagant and bucket list)*/
+  color: #fff;
   font-weight: 300;
   text-transform: uppercase;
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 2px solid #FFFFFF;
-  /* border color of other buttons*/
+  border-bottom: 2px solid #fff;
   transition: 0.2s opacity;
 }
 
 .button:hover {
-  color: #FFFFFF;
+  color: #fff;
   opacity: 0.8;
 }
 
-/* Layout styling for index */
 .container {
   padding: 0 15px;
 }
@@ -248,34 +235,34 @@ img {
 
 #home .row {
   padding-top: 50px;
-  border-bottom: 1px solid #FFFFFF;
+  border-bottom: 1px solid #fff;
   margin: 25px 0;
   width: 100%;
 }
 
 #work .row {
   padding-bottom: 25px;
-  border-bottom: 1px solid #FFFFFF;
+  border-bottom: 1px solid #fff;
   margin: 25px 0;
   width: 100%;
 }
 
 #about .row {
   padding-bottom: 25px;
-  border-bottom: 1px solid #FFFFFF;
-  margin: 0px;
+  border-bottom: 1px solid #fff;
+  margin: 0;
   width: 100%;
 }
 
 #hero .row {
-  background-color: #FFFFFF;
+  background-color: #fff;
   display: inline-block;
   width: 100%;
   text-align: center;
+}
 
-  span {
-    display: block;
-  }
+span {
+  display: block;
 }
 
 .center {
@@ -288,24 +275,28 @@ img {
   float: left;
 }
 
+.colordo-text {
+  text-align: center;
+}
+
 header {
   display: inline-block;
-  background-color: #778899;
+  background-color: #789;
   width: 100%;
-  -webkit-box-shadow: 0px 3px 5px 0px rgba(236, 236, 236, 0.75);
-  -moz-box-shadow: 0px 3px 5px 0px rgba(236, 236, 236, 0.75);
-  box-shadow: 0px 3px 5px 0px rgba(236, 236, 236, 0.75);
+  -webkit-box-shadow: 0 3px 5px 0 rgba(236, 236, 236, 0.75);
+  -moz-box-shadow: 0 3px 5px 0 rgba(236, 236, 236, 0.75);
+  box-shadow: 0 3px 5px 0 rgba(236, 236, 236, 0.75);
   position: fixed;
-  top: 0px;
-  padding: 0px 4px;
-  margin: 0px;
+  top: 0;
+  padding: 0 4px;
+  margin: 0;
 }
 
 .navtoggle li:not(:last-child) {
   display: none;
 }
 
-.navtoggle, .navtoggle.responsive {
+.navtoggle .navtoggle.responsive {
   position: relative;
 }
 
@@ -315,7 +306,7 @@ header {
   top: 2px;
   font-size: 20px;
   padding-right: 0;
-  color: #FFFFFF;
+  color: #fff;
 }
 
 .navtoggle li {
@@ -324,9 +315,9 @@ header {
 
 .navtoggle.responsive li {
   display: block;
-  padding: 0 0px;
-  //border-top: 0;
-  color: #FFFFFF;
+  padding: 0;
+  border-top: 0;
+  color: #fff;
   text-align: right;
 }
 
@@ -335,25 +326,24 @@ header {
 }
 
 nav>ul>li>a {
-  /*hamburger menu*/
-  padding: 15px 10px 0 10px;
+  padding: 15px 10px 0;
   text-transform: uppercase;
   font-weight: 300;
-  color: #FFFFFF;
+  color: #fff;
 }
 
 nav>ul>li>a:active {
-  padding: 15px 10px 0 10px;
+  padding: 15px 10px 0;
   text-transform: uppercase;
   font-weight: 300;
-  color: #FFFFFF;
+  color: #fff;
   text-decoration: underline;
 }
 
 ul.navigation {
-  margin: 0;
-  padding: 0px;
-  clear:both;
+  margin: 25px;
+  padding: 0;
+  clear: both;
 }
 
 /* ==============================
@@ -387,6 +377,12 @@ Medium devices (640px and larger)
 
   .navtoggle li:last-child {
     display: none;
+  }
+
+  #Layer_1 {
+    height: 500px;
+    width: 800px;
+    float: none;
   }
 
   #about h3 {
@@ -479,7 +475,7 @@ X-large devices (1440px or larger)
   nav {
     width: auto;
     float: right;
-    margin-top: 0px;
+    margin-top: 0;
     border: 10px;
   }
 
