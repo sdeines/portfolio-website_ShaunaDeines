@@ -302,7 +302,7 @@ header {
 
 .navtoggle li .icon {
   position: absolute;
-  right: 0;
+  right: 20px;
   top: 2px;
   font-size: 20px;
   padding-right: 0;
