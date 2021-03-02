@@ -69,11 +69,6 @@ a {
   }
 }
 
-#Layer_1 {
-  height: auto;
-  width: 100%;
-}
-
 #montivagant-picture {
   display: flex;
   justify-content: flex-start;
@@ -382,7 +377,6 @@ Medium devices (640px and larger)
   #Layer_1 {
     height: auto;
     width: 100%;
-    float: none;
   }
 
   #about h3 {
