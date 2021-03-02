@@ -71,7 +71,7 @@ a {
 
 #Layer_1 {
   height: auto;
-  width: auto;
+  width: 100%;
 }
 
 #montivagant-picture {
@@ -380,8 +380,8 @@ Medium devices (640px and larger)
   }
 
   #Layer_1 {
-    height: 500px;
-    width: 800px;
+    height: auto;
+    width: 100%;
     float: none;
   }
 
